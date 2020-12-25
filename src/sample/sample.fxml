@@ -26,7 +26,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="button4" fitHeight="52.0" fitWidth="30.0" GridPane.columnIndex="4">
+            <ImageView fx:id="button4" fitHeight="52.0" fitWidth="30.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="4">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
