@@ -2,8 +2,11 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.event.Event;
+import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 
@@ -16,6 +19,9 @@ public class Controller {
     public ImageView button2;
     public ImageView button3;
     public ImageView button4;
+    public ImageView left_hand;
+    public ImageView radioHand;
+
 
     public void switchOnOffButtons(MouseEvent event){
 
@@ -65,6 +71,22 @@ public class Controller {
                     button_state[4] = "on";
                 }
                 break;
+        }
+    }
+    @FXML
+    public void leftHandMovement(KeyEvent keyEvent) {
+        System.out.println("znak: ");
+        if (keyEvent.getCode()== KeyCode.W){
+            left_hand.setRotate(left_hand.getRotate()+10);
+        }
+        else if (keyEvent.getCode()== KeyCode.S){
+            left_hand.setRotate(left_hand.getRotate()-10);
+        }
+        else if (keyEvent.getCode()== KeyCode.A){
+            radioHand.setX(radioHand.getX()-5);
+        }
+        else if (keyEvent.getCode()== KeyCode.D){
+            radioHand.setX(radioHand.getX()+5);
         }
     }
 }
