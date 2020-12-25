@@ -31,37 +31,37 @@ public class Controller {
                 break;
             case "button1":
                 if (button_state[1].equals("on")) {
-                    button0.setImage(new Image("sample/buttonOFF.png"));
+                    button1.setImage(new Image("sample/buttonOFF.png"));
                     button_state[1] = "off";
                 } else {
-                    button0.setImage(new Image("sample/ButtonON.png"));
+                    button1.setImage(new Image("sample/ButtonON.png"));
                     button_state[1] = "on";
                 }
                 break;
             case "button2":
                 if (button_state[2].equals("on")) {
-                    button0.setImage(new Image("sample/buttonOFF.png"));
+                    button2.setImage(new Image("sample/buttonOFF.png"));
                     button_state[2] = "off";
                 } else {
-                    button0.setImage(new Image("sample/ButtonON.png"));
+                    button2.setImage(new Image("sample/ButtonON.png"));
                     button_state[2] = "on";
                 }
                 break;
             case "button3":
                 if (button_state[3].equals("on")) {
-                    button0.setImage(new Image("sample/buttonOFF.png"));
+                    button3.setImage(new Image("sample/buttonOFF.png"));
                     button_state[3] = "off";
                 } else {
-                    button0.setImage(new Image("sample/ButtonON.png"));
+                    button3.setImage(new Image("sample/ButtonON.png"));
                     button_state[3] = "on";
                 }
                 break;
             case "button4":
                 if (button_state[4].equals("on")) {
-                    button0.setImage(new Image("sample/buttonOFF.png"));
+                    button4.setImage(new Image("sample/buttonOFF.png"));
                     button_state[4] = "off";
                 } else {
-                    button0.setImage(new Image("sample/ButtonON.png"));
+                    button4.setImage(new Image("sample/ButtonON.png"));
                     button_state[4] = "on";
                 }
                 break;
