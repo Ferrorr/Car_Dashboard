@@ -14,7 +14,7 @@
         <URL value="@style.css" />
     </stylesheets>
    <children>
-      <GridPane layoutX="174.0" layoutY="486.0" prefHeight="34.0" prefWidth="175.0">
+      <GridPane layoutX="173.0" layoutY="484.0" prefHeight="34.0" prefWidth="175.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -26,7 +26,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="button4" fitHeight="52.0" fitWidth="30.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="4">
+            <ImageView fx:id="button4" fitHeight="52.0" fitWidth="30.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
@@ -34,7 +34,7 @@
                   <Insets bottom="1.0" />
                </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button3" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="3">
+            <ImageView fx:id="button3" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
@@ -42,7 +42,7 @@
                   <Insets bottom="1.0" />
                </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button2" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="2">
+            <ImageView fx:id="button2" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
@@ -50,7 +50,7 @@
                   <Insets bottom="1.0" />
                </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button1" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="1">
+            <ImageView fx:id="button1" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
@@ -58,7 +58,7 @@
                   <Insets bottom="1.0" />
                </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button0" fitHeight="52.0" fitWidth="30.0" layoutX="150.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons">
+            <ImageView fx:id="button0" fitHeight="52.0" fitWidth="30.0" layoutX="150.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
