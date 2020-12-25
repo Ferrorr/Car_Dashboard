@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" styleClass="anchor" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" styleClass="anchor" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
@@ -27,28 +28,43 @@
          <children>
             <ImageView fx:id="button4" fitHeight="52.0" fitWidth="30.0" GridPane.columnIndex="4">
                <image>
-                  <Image url="@ButtonON.png" />
+                  <Image url="@buttonOFF.png" />
                </image>
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button2" fitHeight="52.0" fitWidth="30.0" GridPane.columnIndex="2">
+            <ImageView fx:id="button3" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="3">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button3" fitHeight="52.0" fitWidth="30.0" GridPane.columnIndex="3">
+            <ImageView fx:id="button2" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="2">
                <image>
                   <Image url="@buttonOFF.png" />
                </image>
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button1" fitHeight="52.0" fitWidth="30.0" GridPane.columnIndex="1">
+            <ImageView fx:id="button1" fitHeight="52.0" fitWidth="30.0" layoutX="10.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons" GridPane.columnIndex="1">
                <image>
-                  <Image url="@ButtonON.png" />
+                  <Image url="@buttonOFF.png" />
                </image>
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin>
             </ImageView>
-            <ImageView fx:id="button0" fitHeight="52.0" fitWidth="30.0">
+            <ImageView fx:id="button0" fitHeight="52.0" fitWidth="30.0" layoutX="150.0" layoutY="1.0" onMouseClicked="#switchOnOffButtons">
                <image>
-                  <Image url="@ButtonON.png" />
+                  <Image url="@buttonOFF.png" />
                </image>
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin>
             </ImageView>
          </children>
       </GridPane>
