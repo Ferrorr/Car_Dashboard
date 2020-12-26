@@ -1,8 +1,9 @@
 package sample;
 
-import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import java.io.File;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -19,8 +20,13 @@ public class Controller {
     public ImageView button2;
     public ImageView button3;
     public ImageView button4;
-    public ImageView left_hand;
+    public ImageView right_hand;
     public ImageView radioHand;
+    public ImageView start_button1;
+    public ImageView start_button2;
+    String musicFile = "src/sample/brum.mp3";     // For example
+
+
 
 
     public void switchOnOffButtons(MouseEvent event){
@@ -75,12 +81,17 @@ public class Controller {
     }
     @FXML
     public void leftHandMovement(KeyEvent keyEvent) {
-        System.out.println("znak: ");
+        //System.out.println("znak: ");
         if (keyEvent.getCode()== KeyCode.W){
-            left_hand.setRotate(left_hand.getRotate()+10);
+            if(right_hand.getRotate()+5<65){
+                right_hand.setRotate(right_hand.getRotate()+7);
+            }
         }
         else if (keyEvent.getCode()== KeyCode.S){
-            left_hand.setRotate(left_hand.getRotate()-10);
+            if(right_hand.getRotate()-5>-65){
+                right_hand.setRotate(right_hand.getRotate()-7);
+            }
+
         }
         else if (keyEvent.getCode()== KeyCode.A){
             radioHand.setX(radioHand.getX()-5);
@@ -88,5 +99,19 @@ public class Controller {
         else if (keyEvent.getCode()== KeyCode.D){
             radioHand.setX(radioHand.getX()+5);
         }
+    }
+
+    public void start_clicked(MouseEvent mouseEvent) {
+        start_button2.toFront();
+        Media sound = new Media(new File(musicFile).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
+
+        //dać jakiś dzwięk
+    }
+
+    public void start_realased(MouseEvent mouseEvent) {
+        start_button2.toBack();
+        //dzwięk stop
     }
 }

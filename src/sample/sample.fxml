@@ -70,7 +70,7 @@
             </ImageView>
          </children>
       </GridPane>
-      <ImageView fx:id="left_hand" fitHeight="367.0" fitWidth="209.0" layoutX="716.0" layoutY="119.0">
+      <ImageView fx:id="left_hand2" fitHeight="300.0" fitWidth="300.0" layoutX="30.0" layoutY="153.0" rotate="-12.4">
          <image>
             <Image url="@hand.png" />
          </image>
@@ -85,5 +85,25 @@
             <Font size="15.0" />
          </font>
       </TextField>
+      <ImageView fx:id="right_hand" fitHeight="580.0" fitWidth="445.0" layoutX="597.0" layoutY="20.0">
+         <image>
+            <Image url="@radio_hand.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="339.0" fitWidth="658.0" layoutX="491.0" layoutY="169.0">
+         <image>
+            <Image url="@top.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="start_button2" fitHeight="110.0" fitWidth="110.0" layoutX="665.0" layoutY="442.0">
+         <image>
+            <Image url="@Start_button2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="start_button1" fitHeight="110.0" fitWidth="110.0" layoutX="665.0" layoutY="442.0" onMousePressed="#start_clicked" onMouseReleased="#start_realased">
+         <image>
+            <Image url="@Start_button.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
