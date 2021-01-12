@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -17,8 +18,6 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
             primaryStage.setTitle("Brum Brum..");
             Scene scene = new Scene(root, 1000, 580);
-            Timeline t = new Timeline();
-            t.setCycleCount(1);
             primaryStage.setScene(scene);
             primaryStage.show();
             scene.getRoot().requestFocus();
