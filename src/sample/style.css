@@ -5,3 +5,12 @@
     -fx-background-image:url('tlo2.jpg');
     -fx-background-size: 100% 100%;
 }
+
+#gas_pedal{
+	-fx-graphic:url('pedal_extra.png');
+	-fx-background-color: #982021;
+}
+#brake_pedal{
+	-fx-graphic:url('brake_pedal.png');
+	-fx-background-color: #982021;
+}
